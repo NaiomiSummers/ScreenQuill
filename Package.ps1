@@ -9,7 +9,7 @@ try {
     $zip = [IO.Compression.ZipFile]::Open($temporary, [IO.Compression.ZipArchiveMode]::Create)
     try {
         # Explicit release contents: never package settings, recordings, exports or QA results.
-        $files = @('Build.ps1','Launch.cmd','README.md','SopRecorder.exe','START-HERE.txt','Test.ps1','LICENSE','THIRD-PARTY-NOTICES.md','terms.md')
+        $files = @('Build.ps1','Launch.cmd','README.md','SopRecorder.exe','START-HERE.txt','Test.ps1','LICENSE','THIRD-PARTY-NOTICES.md','terms.md','VALIDATION.md')
         $files += @(Get-ChildItem -LiteralPath (Join-Path $source 'src') -File | ForEach-Object { 'src/' + $_.Name })
         foreach ($relative in $files) {
             [IO.Compression.ZipFileExtensions]::CreateEntryFromFile($zip, (Join-Path $source $relative), ('SopRecorder/' + $relative), [IO.Compression.CompressionLevel]::Optimal) | Out-Null
