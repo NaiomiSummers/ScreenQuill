@@ -1,0 +1,79 @@
+SOP RECORDER — RECORD A TASK FOR YOUR AI AGENT
+
+1. Double-click SopRecorder.exe. No account or installation is needed.
+   Launch.cmd also works and rebuilds the app if the EXE is missing.
+
+2. Click Record Screen. That is all you need to start.
+   It uses your primary display, or the last display you chose if it is
+   still connected. For another display, use Choose target... first.
+   Single-window recording is available in that picker too.
+
+3. The recorder minimizes. Work normally across apps on that display.
+   It saves a screenshot for each click, the start of a typing burst,
+   and each Tab or Shift+Tab focus change. An initial screenshot marks
+   the start. You do not have to press a screenshot hotkey.
+
+4. Return to SOP Recorder from the taskbar to Pause or Stop and review.
+   Pause disables triggers and cancels waiting captures. Resume starts
+   fresh. If Windows blocks automatic triggers, the app clearly shows
+   MANUAL ONLY; use Capture now instead.
+
+5. After Stop, click each step to preview it. Double-click an image
+   to enlarge it. Add notes explaining what happened, why, or what to
+   check. Move up/down changes the order. Remove excludes a step from
+   the ZIP; Undo restores the last removal. On a smaller screen, scroll
+   within the review area to reach notes and the export controls.
+
+6. Task details are optional. Before or after recording, you can add
+   a task name, goal, starting point, and description of done in the
+   Task details tab. These help your existing AI agent understand the
+   screenshots.
+
+7. Check the review box and click Export ZIP... Save it on this PC.
+   The ZIP contains procedure.md and numbered PNGs with timestamps.
+   Give that reviewed ZIP to your AI agent to draft the SOP.
+
+FILE LOCATIONS
+
+The first verified workflow is the built-in local text viewer:
+while recording a display, open Task details and click
+Open text file with verified evidence... Select a local .txt file
+(up to 1 MB). The viewer opens it and adds a timestamped file-open
+step using the location verified from the file's actual handle.
+The file itself is never copied into the evidence ZIP.
+
+Other app file opens are NOT tracked automatically. Add their file
+location manually to a step during review. Edit, shorten, or clear
+the location field as needed. An edited location is marked manual.
+Removing a path field does not erase a path visible in a screenshot;
+remove that screenshot too if you do not want to share it.
+
+TIMING
+
+Timing... shows elapsed and active recording time, the time between
+retained captures, the longest interval, and before-first / after-last
+capture time. These gaps can include idle time or unrecorded activity.
+They are not a measure of work effort. Timings follow original capture
+chronology even if you move steps into a different order for the SOP.
+
+SETTINGS AND LOCAL STORAGE
+
+Click / Tab delay defaults to 250 ms so the result or focused field is
+visible. Typing idle defaults to 2 seconds. Adjust these while stopped
+or paused. Tab does not reset the typing timer. Repeated held keys and
+modifier-only presses do not create screenshots.
+
+Everything stays local. Screen mode captures what is visible on the
+selected display, including other apps. No raw keyboard log, typed-text
+log, clipboard content, audio, transcription, or built-in AI is saved.
+Visible text can naturally appear in screenshots; review them before
+sharing. A cloud-synced local folder may sync your exported ZIP through
+your own cloud software; use a non-synced folder to avoid that.
+
+Export before closing. This version has no saved drafts or crash
+recovery. A disconnected display pauses recording; choose an available
+target and Resume. Protected windows and the Windows secure desktop
+may not capture correctly.
+
+APPROVED TERMS AND LICENSE
+Before the official recorder opens, review the bundled offline agreement and choose I agree or Decline. Decline exits without capture or saved assent. Acceptance is stored per Windows user in %LOCALAPPDATA%\ScreenQuill\terms-acceptance.txt, separately from recordings and exports, and survives updates. The Terms button reopens the agreement. Version plus normalized SHA-256 identifies it; build-only changes do not prompt again. The MIT code license is in LICENSE and is independent of official-build terms.

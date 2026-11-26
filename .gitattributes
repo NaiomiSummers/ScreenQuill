@@ -1,0 +1,6 @@
+*.png -text
+*.jpg -text
+*.ttf -text
+*.xlsx -text
+*.zip -text
+*.exe -text

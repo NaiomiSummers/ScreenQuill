@@ -1,0 +1,4 @@
+SopRecorder/tests/
+**/terms-acceptance.txt
+**/*.tmp
+portable-*.zip
